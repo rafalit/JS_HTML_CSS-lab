@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Ekran startowy -->
+        <div id="startScreen">
+            <div id="startBox">
+                <h1>Witaj w grze!</h1>
+                <input type="text" id="nickname" placeholder="Podaj swój nick" />
+                <div id="buttonsContainer">
+                    <button id="startButton">Start</button>
+                    <button id="highscoresButton">Ranking</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ekran gry -->
+        <div id="gameScreen" style="display: none;">
+            <canvas id="zombieCanvas"></canvas>
+            <div id="pauseMenu" style="display: none;">
+                <h2>Gra Zatrzymana</h2>
+                
+                <!-- Serduszka na ekranie pauzy -->
+                <div id="pauseHeartContainer"></div>
+                
+                <!-- Punkty i zabici -->
+                <p id="pausePoints">Punkty: 0</p>
+                <p id="pauseKills">Zabici: 0</p>
+                
+                <button id="resumeButton">Wznów grę</button>
+                <button id="restartButton">Restart</button>
+                <button id="menuButton">Do menu</button>
+            </div>
+        </div>
+
+        <!-- Ekran rankingów -->
+        <div id="highscoresScreen" style="display: none;">
+            <h2>Ranking</h2>
+            <ul id="highscoresList"></ul>
+            <button id="backToMenuButton">Powrót do menu</button>
+        </div>
+    </div>
+
+    <script src="zad7.js"></script>
+</body>
+</html>
+
