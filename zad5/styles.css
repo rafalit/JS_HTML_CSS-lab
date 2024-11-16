@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #007bff; /* Kolor główny */
+    --dark-color: #343a40;   /* Kolor ciemnego tła */
+    --light-color: #fff;     /* Kolor jasny */
+}
+
+/* Tło całej strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8faf9;
+}
+
+/* Nagłówek */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--light-color) !important;
+}
+
+.nav-link {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+/* Karuzela */
+.carousel {
+    height: 80vh; /* Wysokość zmniejszona dla lepszej widoczności na ekranach */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Poziome paski do karuzeli (wskaźniki) */
+.carousel-indicator {
+    width: 30px;  /* Zwiększamy rozmiar */
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;  /* Niebieski kolor dla wszystkich */
+    margin: 0 8px;
+    border: none;
+    transition: background-color 0.3s ease; /* Dodajemy płynne przejście koloru */
+}
+
+.carousel-indicator.active {
+    background-color: #0056b3;  /* Ciemniejszy niebieski dla aktywnego wskaźnika */
+}
+
+/* Dodajemy efekty hover na wskaźnikach */
+.carousel-indicator:hover {
+    background-color: #0056b3;  /* Ciemniejszy niebieski przy najechaniu */
+}
+
+/* Sekcja Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.accordion-button {
+    color: #333;
+    font-weight: 500;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Ukrywanie karuzeli na bardzo małych ekranach */
+@media (max-width: 768px) {
+    .carousel {
+        height: 50vh; /* Zamiast ukrywać, zmniejszamy wysokość */
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+    }
+}
+
+/* Dostosowanie marginesów */
+.container {
+    margin-top: 50px;
+}
+
+/* Poprawki dla responsywności */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .accordion-item {
+        margin: 15px 0;
+    }
+}
+
+/* Efekty hover */
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.accordion-button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+/* Ukryj karuzelę na małych ekranach */
+@media (max-width: 991.98px) {
+    #carouselExample {
+        display: none;
+    }
+}
+
+/* Ukryj wskaźniki karuzeli (cztery prostokąty) na małych ekranach */
+@media (max-width: 991.98px) {
+    #carouselIndicators {
+        display: none;
+    }
+}
+
+/* Stylizacja FAQ: dodajemy odpowiedni margines */
+#faq-section {
+    margin-top: 0px !important; /* Możesz dostosować do swoich potrzeb */
+}
+
+/* Styl dla sekcji FAQ */
+.accordion-button {
+    font-size: 1.1rem; /* Zwiększamy czcionkę */
+}
+
+.accordion-body {
+    font-size: 1rem; /* Dopasowanie tekstu w FAQ */
+}
+
+/* Stylizacja aktywnego przycisku w FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.accordion-button.collapsed {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd; /* Dodajemy cienką ramkę wokół przycisku */
+}
+
+/* Dostosowanie początkowego stanu FAQ - zwinięte pytania */
+.accordion-button.collapsed {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Zmiana stylu przycisków FAQ - zmiana tła dla zwiniętych */
+.accordion-button.collapsed {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #000000;
+}
