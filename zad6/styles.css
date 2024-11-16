@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Ensure padding doesn't change input size */
+}
+
+input[disabled] {
+    background-color: #f0f0f0;  /* Slightly change background color to show it's disabled */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;  /* Make the icon a bit bigger */
+}
+
+#password-requirements {
+    margin-bottom: 20px;
+}
+
+.requirement {
+    color: gray;
+    margin-left: 20px;
+}
+
+.requirement.green {
+    color: green;
+}
+
+.requirement.completed::before {
+    content: "✔ ";
+    color: green;
+}
+
+#new-password {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't change input size */
+}
+
+#repeat-password {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't change input size */
+}
+
+#error-message {
+    margin-top: 10px;
+}

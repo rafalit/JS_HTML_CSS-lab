@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz zmiany hasła</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Zmiana hasła</h2>
+        
+        <label for="new-password">New password</label>
+        <div class="password-container">
+            <input type="password" id="new-password" placeholder="Enter your new password">
+            <span id="eye-icon" class="eye-icon">&#128065;</span>
+        </div>
+        
+        <label for="repeat-password">Repeat new password</label>
+        <div class="password-container">
+            <input type="password" id="repeat-password" placeholder="Repeat your new password" disabled>
+            <span id="eye-icon-repeat" class="eye-icon">&#128065;</span>
+        </div>
+
+        <div id="password-requirements">
+            <ul>
+                <li id="min-length" class="requirement">At least 8 characters</li>
+                <li id="special-char" class="requirement">At least one special character</li>
+                <li id="capital-letter" class="requirement">At least one capital letter</li>
+                <li id="digit" class="requirement">At least one digit</li>
+            </ul>
+        </div>
+
+        <p id="error-message" style="color: red; display: none;">Hasła nie są zgodne!</p>
+    </div>
+
+    <script src="zad6.js"></script>
+</body>
+</html>
