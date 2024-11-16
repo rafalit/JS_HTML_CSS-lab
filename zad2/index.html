@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Shopping List App</h1>
+            <button id="add-item-btn">Add Item</button>
+        </div>
+
+        <div id="add-item-form">
+            <button id="cancel-btn">Cancel</button>
+            <div>
+                <input type="text" id="item-input" placeholder="Enter item name">
+                <input type="checkbox" id="high-priority">
+                <label for="high-priority" class="high-priority-label">High Priority</label>
+                <button id="save-item-btn">Save Item</button>
+            </div>
+        </div>
+
+        <ul id="shopping-list"></ul>
+    </div>
+
+    <script src="zad2.js"></script>
+</body>
+</html>
