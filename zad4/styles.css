@@ -1,0 +1,167 @@
+/* Styl strony */
+body {
+    background-color: #000; /* Tło strony - czarne */
+    color: #fff; /* Tekst w kolorze białym */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówek */
+header {
+    background-color: #2694e2; /* Kolor tła dla nagłówka */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 20px;
+    margin: 0;
+}
+
+.camera-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Pomarańczowy pasek pod nagłówkiem */
+.orange-bar {
+    background-color: #ff7f00;
+    height: 5px;
+}
+
+/* Wyszukiwarka */
+#search-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    position: absolute;
+    top: 5%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+#search-input {
+    padding: 10px 40px 10px 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+#search-input:focus {
+    outline: none;
+    border: 2px solid #ff7f00;
+}
+
+#search-button {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+#search-button i {
+    font-size: 1.2rem;
+}
+
+/* Karuzela zdjęć */
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+#image-carousel {
+    display: flex;
+    gap: 10px;
+}
+
+#image-carousel img {
+    cursor: pointer;
+    border-radius: 8px;
+    width: 200px; /* Zwiększenie rozmiaru miniaturki */
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Karuzela zdjęć */
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+#image-carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Dodanie płynnej animacji przesuwania */
+}
+
+#image-carousel img {
+    cursor: pointer;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Strzałki */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}

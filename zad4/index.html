@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo by GR - Unsplash API Tester</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Połączenie z plikiem CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!-- Dodanie ikonki lupy -->
+</head>
+<body>
+
+    <header>
+        <img src="aparat.jpg" alt="Pomarańczowy aparat" class="camera-icon">
+        <h1>Demo by GR - Unsplash API Tester</h1>
+    </header>
+    <div class="orange-bar"></div>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Wyszukaj zdjęcia...">
+        <button id="search-button" onclick="searchImages()">
+            <i class="fas fa-search"></i> <!-- Ikona lupy -->
+        </button>
+    </div>
+
+    <div id="carousel-container">
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">&lt;</button>
+        <div id="image-carousel"></div>
+        <button class="carousel-button next" onclick="moveCarousel(1)">&gt;</button>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="large-image" src="" alt="Powiększone zdjęcie">
+    </div>
+
+    <script src="zad4.js"></script>  <!-- Link do pliku JavaScript -->
+</body>
+</html>
