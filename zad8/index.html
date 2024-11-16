@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header with Indicators -->
+        <div class="header">
+            <div class="indicator active">1</div>
+            <div class="indicator">2</div>
+            <div class="indicator">3</div>
+            <div class="indicator">4</div>
+            <div class="indicator">5</div>
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortTable('name')" aria-label="Sort by Name">Name</th>
+                    <th onclick="sortTable('capital')" aria-label="Sort by Capital">Capital</th>
+                    <th onclick="sortTable('population')" aria-label="Sort by Population">Population</th>
+                    <th onclick="sortTable('area')" aria-label="Sort by Area">Area</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script src="zad8.js"></script>
+</body>
+</html>

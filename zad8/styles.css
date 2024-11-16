@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    background-color: #ffffcc; /* jasno żółte tło */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Podstawowe style dla wskaźników */
+.indicator {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: lightgray;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Wskaźnik aktywny */
+.indicator.active {
+    background-color: blue;
+}
+
+.indicator:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+th:hover {
+    background-color: #0056b3;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Subregion Row */
+.subregion-row {
+    background-color: #e0f7fa;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subregion-row:hover {
+    background-color: #b2ebf2;
+}
+
+/* Country Row */
+.country-row {
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    .indicator {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Country rows are hidden by default */
+.country-row {
+    display: none;
+}
+
+/* Add visible class to display rows */
+.country-row.visible {
+    display: table-row;
+}
